@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    padding-block: 3rem;
+}
+
+h1 {
+    padding-bottom: 2rem;
+}
+
+#postal {
+    width: 200px;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#postal-value {
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+#postal-value:focus-visible {
+    border-color: skyblue;
+    outline-color: skyblue;
+}
+
+#search {
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: skyblue;
+    border-radius: 0.2rem;
+    border: none;
+    cursor: pointer;
+    color: darkslategray;
+}
+
+.display-box {
+    margin-block: 1.5rem;
+}
+
+.display-box div {
+    padding-inline: 0.7rem;
+}
+
+.display-box div > * {
+    margin-bottom: 0.4rem;
+    color: dimgrey;
+}
+
+.display-box div span {
+    font-weight: 600;
+    margin-left: 0.5rem;
+    color: darkslategray;
+}
+
+.display-box div:not(:last-child) {
+    border-bottom: 2px solid burlywood;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.display-box .error-message {
+    color: lightcoral;
+    font-size: 1.2rem;
+    text-align: center;
+}
